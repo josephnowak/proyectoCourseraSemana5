@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josep.mascotascoursera.FormularioMensaje">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Nombre">
+            <android.support.design.widget.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:id="@+id/correo"
+            android:hint="Correo">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            </android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mensaje"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Mensaje">
+            <android.support.design.widget.TextInputEditText
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+            </android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pata"
+        android:onClick="enviarMensaje"
+        >
+    </android.support.design.widget.FloatingActionButton>
+
+</RelativeLayout>
